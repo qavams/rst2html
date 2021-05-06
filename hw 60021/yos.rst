@@ -1,4 +1,3 @@
-----
 
 :id: ps-desc-i-id
 
@@ -53,5 +52,3 @@ Share code
 #. :math:`P_0` 1 : x = 5, y = 1
 #. :math:`P_0` 2 : x = 5, y = 3
 #. :math:`P_1` 2 : x = 5, y = 3
-
-----
