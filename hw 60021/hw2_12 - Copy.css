@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+
+  margin: 0;
+  direction: rtl;
+  font-family: nazanin;
+  background-color: #ced4da;
+}
+
+  @font-face {
+    font-family: 'yekan';
+    src:  url('BYekan.ttf?') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'nazanin';
+    src:  url('BNazanin.ttf?') format('truetype');
+  }
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 75% ;
+  grid-gap: 5px;
+  background-color: #fec89a;
+  padding: 12px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: justify;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+.grid-container >.header {
+  
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  background: #e5989b;
+  background-image: url("https://www.melkana.com/blog/wp-content/uploads/2019/01/%DA%A9%D8%A7%D9%85%D9%84%E2%80%8C%D8%AA%D8%B1%DB%8C%D9%86-%D8%B3%D8%A7%DB%8C%D8%AA-%D8%AA%D8%AE%D8%B5%D8%B5%DB%8C-%D8%A7%D9%85%D9%84%D8%A7%DA%A9-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-3.jpg") ;
+  background-repeat : no-repeat;
+  background-size: 100% 100%;
+  color: #e85d04;
+    direction: rtl;
+    font-size: initial;
+    font-family: yekan;
+    display: flex;
+    flex: inherit;
+    flex-direction: column;
+
+}
+
+.ads {
+  text-align: center;
+  background: #ffba08;
+  padding: 5px;
+    direction: rtl;
+}
+
+.grid-container >.header>.navbar {
+  display: flex;
+  background-color: #faedcd;
+  font-family: yekan;
+  direction: rtl;
+
+}
+
+.grid-container >.header>.navbar a {
+  color: #d00000;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  direction: rtl;
+
+font-family: yekan;
+}
+
+/* Change color on hover */
+.grid-container >.header> .navbar a:hover {
+  background-color: #ddd;
+  font-family: yekan;
+  color: black;
+  direction: rtl;
+
+}
+
+.end {
+text-align: center;
+background-color: rgb(121, 224, 24);
+}
+.row1 {
+  background-color: #3668f1;
+}
+.row {
+  background-color: #fdfcdc;
+}
+
+.about {
+  background-color: #f1f1f1;
+
+}
+
+
+.main {
+  
+}
+
+
+.myimg > img {
+  background-color: rgb(243, 132, 132);
+
+  direction: rtl;
+  max-width: 100%;
+  height: auto;
+
+}
+.myimg1 > img {
+  background-color:transparent;
+  Border-radius:20px 20px 20px 20px;
+  padding: 5px;
+  direction: rtl;
+  max-width: 50%;
+  max-height: 200px;
+
+}
+
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(216, 226, 160);
+  direction: rtl;
+}
+
+
+@media print {
+  .noprint {
+      display: none;
+  }
+
+     
+  html, body {
+        width: 210mm;
+        height: 297mm;
+        padding: 0px;
+        font: 18px tahoma, arial, sans-serif;
+            }
+ 
+  * {
+      color: #000;    
+      background-color: #fff;
+      @include box-shadow(none);
+      @include text-shadow(none);
+  }
+  a:after {
+      content: "( "attr(href)" )";
+  }
+
+}
+
+@page {
+  size: A4;
+  margin: 10;
+}
